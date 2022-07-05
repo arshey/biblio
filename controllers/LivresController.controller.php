@@ -80,7 +80,7 @@ class LivresController{
         if(!file_exists($dir)) mkdir($dir,0777);
     
         $extension = strtolower(pathinfo($file['name'],PATHINFO_EXTENSION));
-        $random = rand(0,99999);
+        $random = mt_rand(0, 99);
         $target_file = $dir.$random."_".$file['name'];
         
         if(!getimagesize($file["tmp_name"]))
