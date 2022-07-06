@@ -4,7 +4,7 @@ ob_start();
 
 <div class="row">
     <div class="col-6">
-        <img src="<?= URL ?>public/images/<?= $livre->getImage(); ?>">
+        <img src="<?= URL ?>public/images/<?= $livre->getImage(); ?>" alt="Image du livre">
     </div>
     <div class="col-6">
         <p>Titre : <?= $livre->getTitre(); ?></p>
